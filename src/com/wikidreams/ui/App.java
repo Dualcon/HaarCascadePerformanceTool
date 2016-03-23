@@ -1,7 +1,5 @@
 package com.wikidreams.ui;
 
-import java.io.File;
-
 import com.wikidreams.properties.PropertiesManager;
 
 public class App {
@@ -10,13 +8,10 @@ public class App {
 		// Load project properties.
 		PropertiesManager.loadProperties("resources/config.properties");
 
-		// Create workspace.
-		File file = new File(PropertiesManager.properties.get("WorkSpace"));
-		if (! file.exists()) {
-			file.mkdir();
-		}
+		// Create project folders and load files.
+		ProjectFoldersManager.create();
 
-		// Create dialog menu.
+		// Create the dialog menu.
 		DialogManager.createMenu();
 	}
 

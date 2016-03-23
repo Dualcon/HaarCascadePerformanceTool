@@ -22,8 +22,10 @@ public class PropertiesManager {
 					prop.load(inputStream);
 					// Read project properties file
 					PropertiesManager.properties.clear();
-					PropertiesManager.properties.put("OpenCVBin", prop.getProperty("OpenCVBin"));
+					PropertiesManager.properties.put("TestsFolder", prop.getProperty("TestsFolder"));
 					PropertiesManager.properties.put("WorkSpace", prop.getProperty("WorkSpace"));
+					PropertiesManager.properties.put("PositiveTestImagesFolder", prop.getProperty("PositiveTestImagesFolder"));
+					PropertiesManager.properties.put("NegativeTestImagesFolder", prop.getProperty("NegativeTestImagesFolder"));
 					PropertiesManager.logger.info("Project properties loaded.");
 				} else {
 					PropertiesManager.logger.error("property file '" + propFileName + "' not found in the classpath");
