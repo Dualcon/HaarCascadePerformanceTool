@@ -1,6 +1,6 @@
 # Visual Computing
 
-## This is a simple tool for evaluate the quality of one or more Haar Cascade classifiers..
+## This is a simple tool for evaluate the quality of one or more Haar Cascade classifiers.
 
 ## It is easy configure a folder to the positive images, another one to the negative and for the cascade classifiers.
 
