@@ -2,7 +2,7 @@
 
 ## This is a simple tool for evaluate the quality of one or more Haar Cascade classifiers.
 
-## It is easy configure a folder to the positive images, another one to the negative and for the cascade classifiers.
+## It is easy configure a positive image folder, another one to the negatives ones and for the cascade classifiers.
 
 Starting the process, a log file will be created with some reports:
 - The name of each Haar Cascade.
